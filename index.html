@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        table, td{
+            margin: auto;
+            border: solid 1px black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Form</h1>
+    <table>
+    <form method="post" name="modulo">
+        <tr>
+            <td>Inserisci il tuo nome</td>
+            <td><input type="text" name="nome" id="nome"></td>
+        </tr>
+        <tr>
+            <td>Inserisci il tuo cognome</td>
+            <td><input type="text" name="cognome" id="cognome"></td>
+        </tr>
+        <tr>
+            <td>Inserisci la tua email: </td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Inserisci la tua data di nascita: (es: 12/04/1978)</td>
+            <td><input type="text" name="nascita" id="nascita"></td>
+        </tr>
+        <tr>
+            <td>Inserisci il tuo sesso: </td>
+            <td>
+                <select name="sesso">
+                    <option value="Scegli">Scegli</option>
+                    <option value="Maschio">Maschio</option>
+                    <option value="Femmina">Femmina</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Premi il tasto invia: </td>
+            <td><input type="button" value="Invia" onclick="validazione()"></td>
+        </tr>
+    </form>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
